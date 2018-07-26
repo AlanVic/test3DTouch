@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,193 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="teste3DTouch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alan" translatesAutoresizingMaskIntoConstraints="NO" id="E42-Ai-4Wy">
+                                <rect key="frame" x="120" y="364" width="134" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alan" translatesAutoresizingMaskIntoConstraints="NO" id="z2p-i0-3RD">
+                                <rect key="frame" x="120" y="364" width="134" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="panico" translatesAutoresizingMaskIntoConstraints="NO" id="T48-2m-Ehy">
+                                <rect key="frame" x="120" y="143" width="134" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79607843140000001" green="0.14901960780000001" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="alan" destination="z2p-i0-3RD" id="7Uj-H8-6gB"/>
+                        <outlet property="panico" destination="T48-2m-Ehy" id="Nec-Ke-eFz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-212" y="32.833583208395808"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sf2-dh-XY1">
+            <objects>
+                <viewController storyboardIdentifier="view2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VGU-rR-hEF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LZI-SX-9DH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alan" translatesAutoresizingMaskIntoConstraints="NO" id="8pp-Vv-Gco">
+                                <rect key="frame" x="67" y="156" width="240" height="216"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alan Victor é feio?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIs-ly-rdW">
+                                <rect key="frame" x="83" y="398" width="209" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="gaC-uP-Dnp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KbC-BP-dEH" firstAttribute="bottom" secondItem="DIs-ly-rdW" secondAttribute="bottom" constant="237" id="2vw-8U-1Kj"/>
+                            <constraint firstItem="8pp-Vv-Gco" firstAttribute="top" secondItem="KbC-BP-dEH" secondAttribute="top" constant="136" id="9xV-VS-c7e"/>
+                            <constraint firstItem="KbC-BP-dEH" firstAttribute="trailing" secondItem="8pp-Vv-Gco" secondAttribute="trailing" constant="68" id="NNB-AE-igg"/>
+                            <constraint firstItem="DIs-ly-rdW" firstAttribute="leading" secondItem="KbC-BP-dEH" secondAttribute="leading" constant="83" id="UeH-2t-iBo"/>
+                            <constraint firstItem="DIs-ly-rdW" firstAttribute="top" secondItem="8pp-Vv-Gco" secondAttribute="bottom" constant="26" id="YNB-Eo-9Ap"/>
+                            <constraint firstItem="KbC-BP-dEH" firstAttribute="trailing" secondItem="DIs-ly-rdW" secondAttribute="trailing" constant="83" id="Zyo-zZ-nXz"/>
+                            <constraint firstItem="8pp-Vv-Gco" firstAttribute="leading" secondItem="KbC-BP-dEH" secondAttribute="leading" constant="67" id="z8X-kk-xxJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KbC-BP-dEH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qgn-60-2UX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1238" y="33"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bN0-JC-EMY">
+            <objects>
+                <viewController storyboardIdentifier="view3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gk5-Mf-Lj9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tAG-I6-GiB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alan" translatesAutoresizingMaskIntoConstraints="NO" id="mfi-IJ-Xly">
+                                <rect key="frame" x="67" y="68" width="240" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="VrD-e3-3NG"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kVG-Jt-SPT">
+                                <rect key="frame" x="27" y="348" width="326" height="367"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Como podemos nos certificar o Alan Victor, estudante de Engenharia de Telecomunicações é um apessoa desprovida de beleza, eu não diria que seja feio, mas vemos que também não é bonito. Além disso, ele é muito chato, mas é gente boa. Como podemos nos certificar o Alan Victor, estudante de Engenharia de Telecomunicações é um apessoa desprovida de beleza, eu não diria que seja feio, mas vemos que também não é bonito. Além disso, ele é muito chato, mas é gente boa. Como podemos nos certificar o Alan Victor, estudante de Engenharia de Telecomunicações é um apessoa desprovida de beleza, eu não diria que seja feio, mas vemos que também não é bonito. Além disso, ele é muito chato, mas é gente boa. Como podemos nos certificar o Alan Victor, estudante de Engenharia de Telecomunicações é um apessoa desprovida de beleza, eu não diria que seja feio, mas vemos que também não é bonito. Além disso, ele é muito chato, mas é gente boa</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alan Victor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paz-78-bhv">
+                                <rect key="frame" x="124" y="307" width="126" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mfi-IJ-Xly" firstAttribute="leading" secondItem="WJL-CL-vtb" secondAttribute="leading" constant="67" id="BjY-zw-oiG"/>
+                            <constraint firstItem="WJL-CL-vtb" firstAttribute="trailing" secondItem="kVG-Jt-SPT" secondAttribute="trailing" constant="22" id="CPU-Rl-cnq"/>
+                            <constraint firstItem="paz-78-bhv" firstAttribute="leading" secondItem="WJL-CL-vtb" secondAttribute="leading" constant="124" id="EXy-Vm-7Hr"/>
+                            <constraint firstAttribute="bottom" secondItem="kVG-Jt-SPT" secondAttribute="bottom" constant="-48" id="Mlp-hf-uVg"/>
+                            <constraint firstItem="paz-78-bhv" firstAttribute="top" secondItem="mfi-IJ-Xly" secondAttribute="bottom" constant="23" id="N8L-b5-Lyd"/>
+                            <constraint firstItem="kVG-Jt-SPT" firstAttribute="top" secondItem="paz-78-bhv" secondAttribute="bottom" constant="8" id="UMb-xG-bua"/>
+                            <constraint firstItem="mfi-IJ-Xly" firstAttribute="centerX" secondItem="paz-78-bhv" secondAttribute="centerX" id="cd6-G3-cBH"/>
+                            <constraint firstItem="mfi-IJ-Xly" firstAttribute="top" secondItem="WJL-CL-vtb" secondAttribute="top" constant="48" id="euK-OY-b92"/>
+                            <constraint firstItem="kVG-Jt-SPT" firstAttribute="leading" secondItem="WJL-CL-vtb" secondAttribute="leading" constant="27" id="oeu-v5-XpY"/>
+                            <constraint firstItem="WJL-CL-vtb" firstAttribute="trailing" secondItem="paz-78-bhv" secondAttribute="trailing" constant="125" id="okU-Hw-9WB"/>
+                            <constraint firstItem="kVG-Jt-SPT" firstAttribute="top" secondItem="paz-78-bhv" secondAttribute="bottom" constant="8" id="reQ-qH-OpH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WJL-CL-vtb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mmh-A9-syf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2116" y="33"/>
+        </scene>
+        <!--Panico View Controller-->
+        <scene sceneID="gi2-tR-7It">
+            <objects>
+                <viewController storyboardIdentifier="view1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JYo-7K-NdB" customClass="PanicoViewController" customModule="teste3DTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EDQ-9p-jVH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="panico" translatesAutoresizingMaskIntoConstraints="NO" id="AMV-8f-lN7">
+                                <rect key="frame" x="67" y="156" width="240" height="216"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thallya é feia?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4HP-2a-zMP">
+                                <rect key="frame" x="98" y="396" width="209" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="LBy-qd-Kxt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dX2-1l-Cm6" firstAttribute="trailing" secondItem="AMV-8f-lN7" secondAttribute="trailing" constant="68" id="6HB-Cc-DgJ"/>
+                            <constraint firstItem="AMV-8f-lN7" firstAttribute="leading" secondItem="dX2-1l-Cm6" secondAttribute="leading" constant="67" id="CNu-aC-QvR"/>
+                            <constraint firstItem="dX2-1l-Cm6" firstAttribute="bottom" secondItem="4HP-2a-zMP" secondAttribute="bottom" constant="239" id="K9o-z3-n6h"/>
+                            <constraint firstItem="AMV-8f-lN7" firstAttribute="top" secondItem="dX2-1l-Cm6" secondAttribute="top" constant="136" id="Kpv-no-kir"/>
+                            <constraint firstItem="4HP-2a-zMP" firstAttribute="top" secondItem="AMV-8f-lN7" secondAttribute="bottom" constant="24" id="Lhl-UP-sKF"/>
+                            <constraint firstItem="dX2-1l-Cm6" firstAttribute="trailing" secondItem="4HP-2a-zMP" secondAttribute="trailing" constant="68" id="QAD-0G-Pwh"/>
+                            <constraint firstItem="4HP-2a-zMP" firstAttribute="leading" secondItem="dX2-1l-Cm6" secondAttribute="leading" constant="98" id="ahW-Sy-QVa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dX2-1l-Cm6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UkM-FS-S10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="33"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Q7W-Ul-Qcu">
+            <objects>
+                <viewController storyboardIdentifier="viewWeb" id="NKD-ax-GPc" customClass="WebViewController" customModule="teste3DTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="igk-zQ-cjK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gdt-qz-1Gz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="r9G-NE-GqY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myWebview" destination="gdt-qz-1Gz" id="zy3-oa-ZWi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACI-qx-WRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517.60000000000002" y="745.27736131934034"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="alan" width="640" height="640"/>
+        <image name="panico" width="500" height="500"/>
+    </resources>
 </document>

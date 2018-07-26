@@ -13,6 +13,8 @@
 		BE77D15821079C71003E359F /* teste3DTouch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE77D15621079C71003E359F /* teste3DTouch.xcdatamodeld */; };
 		BE77D15A21079C74003E359F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE77D15921079C74003E359F /* Assets.xcassets */; };
 		BE77D15D21079C74003E359F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE77D15B21079C74003E359F /* LaunchScreen.storyboard */; };
+		BE77D1652108B958003E359F /* PanicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77D1642108B958003E359F /* PanicoViewController.swift */; };
+		BE77D1672108C282003E359F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77D1662108C282003E359F /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BE77D15921079C74003E359F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE77D15C21079C74003E359F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE77D15E21079C74003E359F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE77D1642108B958003E359F /* PanicoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanicoViewController.swift; sourceTree = "<group>"; };
+		BE77D1662108C282003E359F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				BE77D15B21079C74003E359F /* LaunchScreen.storyboard */,
 				BE77D15E21079C74003E359F /* Info.plist */,
 				BE77D15621079C71003E359F /* teste3DTouch.xcdatamodeld */,
+				BE77D1642108B958003E359F /* PanicoViewController.swift */,
+				BE77D1662108C282003E359F /* WebViewController.swift */,
 			);
 			path = teste3DTouch;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				BE77D15821079C71003E359F /* teste3DTouch.xcdatamodeld in Sources */,
 				BE77D15221079C71003E359F /* ViewController.swift in Sources */,
+				BE77D1652108B958003E359F /* PanicoViewController.swift in Sources */,
+				BE77D1672108C282003E359F /* WebViewController.swift in Sources */,
 				BE77D15021079C71003E359F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
