@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,25 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alan" translatesAutoresizingMaskIntoConstraints="NO" id="E42-Ai-4Wy">
-                                <rect key="frame" x="120" y="364" width="134" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_safari" translatesAutoresizingMaskIntoConstraints="NO" id="E42-Ai-4Wy">
+                                <rect key="frame" x="207" y="48" width="134" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alan" translatesAutoresizingMaskIntoConstraints="NO" id="z2p-i0-3RD">
-                                <rect key="frame" x="120" y="364" width="134" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="panico" translatesAutoresizingMaskIntoConstraints="NO" id="T48-2m-Ehy">
-                                <rect key="frame" x="120" y="143" width="134" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_webkit" translatesAutoresizingMaskIntoConstraints="NO" id="T48-2m-Ehy">
+                                <rect key="frame" x="20" y="41" width="167" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.79607843140000001" green="0.14901960780000001" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.3764386019" green="0.70986467019999999" blue="0.97478149780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="alan" destination="z2p-i0-3RD" id="7Uj-H8-6gB"/>
-                        <outlet property="panico" destination="T48-2m-Ehy" id="Nec-Ke-eFz"/>
+                        <outlet property="imageSafari" destination="E42-Ai-4Wy" id="AUQ-UV-KMr"/>
+                        <outlet property="imageWebKit" destination="T48-2m-Ehy" id="Q3F-ku-nfT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -98,7 +94,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kVG-Jt-SPT">
                                 <rect key="frame" x="27" y="348" width="326" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Como podemos nos certificar o Alan Victor, estudante de Engenharia de Telecomunicações é um apessoa desprovida de beleza, eu não diria que seja feio, mas vemos que também não é bonito. Além disso, ele é muito chato, mas é gente boa. Como podemos nos certificar o Alan Victor, estudante de Engenharia de Telecomunicações é um apessoa desprovida de beleza, eu não diria que seja feio, mas vemos que também não é bonito. Além disso, ele é muito chato, mas é gente boa. Como podemos nos certificar o Alan Victor, estudante de Engenharia de Telecomunicações é um apessoa desprovida de beleza, eu não diria que seja feio, mas vemos que também não é bonito. Além disso, ele é muito chato, mas é gente boa. Como podemos nos certificar o Alan Victor, estudante de Engenharia de Telecomunicações é um apessoa desprovida de beleza, eu não diria que seja feio, mas vemos que também não é bonito. Além disso, ele é muito chato, mas é gente boa</mutableString>
+                                <string key="text">Como podemos nos certificar o Alan Victor, estudante de Engenharia de Telecomunicações é um apessoa desprovida de beleza, eu não diria que seja feio, mas vemos que também não é bonito. Além disso, ele é muito chato, mas é gente boa. Como podemos nos certificar o Alan Victor, estudante de Engenharia de Telecomunicações é um apessoa desprovida de beleza, eu não diria que seja feio, mas vemos que também não é bonito. Além disso, ele é muito chato, mas é gente boa. Como podemos nos certificar o Alan Victor, estudante de Engenharia de Telecomunicações é um apessoa desprovida de beleza, eu não diria que seja feio, mas vemos que também não é bonito. Além disso, ele é muito chato, mas é gente boa. Como podemos nos certificar o Alan Victor, estudante de Engenharia de Telecomunicações é um apessoa desprovida de beleza, eu não diria que seja feio, mas vemos que também não é bonito. Além disso, ele é muito chato, mas é gente boa</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -200,6 +196,8 @@
     </scenes>
     <resources>
         <image name="alan" width="640" height="640"/>
+        <image name="image_safari" width="600" height="400"/>
+        <image name="image_webkit" width="1200" height="630"/>
         <image name="panico" width="500" height="500"/>
     </resources>
 </document>

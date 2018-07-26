@@ -8,12 +8,15 @@
 
 import UIKit
 import SafariServices
+import WebKit
+
 
 class ViewController: UIViewController, UIViewControllerPreviewingDelegate,SFSafariViewControllerDelegate {
-
-    @IBOutlet weak var alan: UIImageView!
-    @IBOutlet weak var panico: UIImageView!
+    // Referencias Outlets para as duas imagens
+    @IBOutlet weak var imageWebKit: UIImageView!
+    @IBOutlet weak var imageSafari: UIImageView!
     
+    //Url padrão para teste
     let urlString = "https://www.google.com.br"
     
     override func viewDidLoad() {
@@ -21,11 +24,10 @@ class ViewController: UIViewController, UIViewControllerPreviewingDelegate,SFSaf
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        //Check device capability with 3DTouch
+        //Checando aparelho se é compativel com 3D Touch
         if self.traitCollection.forceTouchCapability == .available {
             
             registerForPreviewing(with: self, sourceView: view)
-//            registerForPreviewing(with: self, sourceView: self.alan)
             
             print("This device is available")
         } else {
@@ -35,36 +37,43 @@ class ViewController: UIViewController, UIViewControllerPreviewingDelegate,SFSaf
     
 
     func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController?{
-        let convertedLocationAlan = view.convert(location, to: alan)
-        let convertedLocationPanico = view.convert(location, to: self.panico)
-        if alan.bounds.contains(convertedLocationAlan){
+        
+        // Convertendo localização das imagens para CGPoint que será usado na comparação de onde foi clicado
+        let convertedLocationImageWebKit = view.convert(location, to: self.imageWebKit)
+        let convertedLocationImageSafari = view.convert(location, to: imageSafari)
+        
+        //Se clicado na imagem do safari se será mostrado o peek do safari e caso clicado na imagem do webkit
+        // será mostrado o peek do webkit
+        if imageWebKit.bounds.contains(convertedLocationImageSafari){
+            //converter url para
             guard let url = URL(string: urlString)else{return nil}
             
-            let vc = SFSafariViewController(url: url)
-            vc.delegate = self
-            return vc
-        
+            let peekVC = SFSafariViewController(url: url)
+            peekVC.delegate = self
+            return peekVC
+        }else if imageSafari.bounds.contains(convertedLocationImageWebKit){
+
+            guard let url = URL(string: urlString)else{return nil}
             
-//            let popVC = storyboard?.instantiateViewController(withIdentifier: "view2")
-            //Set your height
-//            popVC?.preferredContentSize = CGSize(width: 0.0, height: 300)
-//            previewingContext.sourceRect = alan.frame
-//            return popVC
-        }else if panico.bounds.contains(convertedLocationPanico){
-            let popVC = storyboard?.instantiateViewController(withIdentifier: "view1")
-            //Set your height
-            //            popVC?.preferredContentSize = CGSize(width: 0.0, height: 300)
-            //            previewingContext.sourceRect = alan.frame
-            return popVC
+            let peekVC = UIViewController()
+            let webView: WKWebView = WKWebView()
+            webView.navigationDelegate = peekVC
+            
+            peekVC.view = webView
+            webView.load(URLRequest(url: url))
+            webView.allowsBackForwardNavigationGestures = false
+            
+            
+            return peekVC
         }else{
             return nil
         }
     }
     
     func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController){
-        
-        let VC = storyboard?.instantiateViewController(withIdentifier: "view3")
-        show(VC!, sender: nil)
+ 
+        // Faz o pop indo para a tela de destino
+        show(viewControllerToCommit, sender: nil)
         
     }
 
@@ -74,5 +83,9 @@ class ViewController: UIViewController, UIViewControllerPreviewingDelegate,SFSaf
     }
 
 
+}
+
+extension UIViewController: WKNavigationDelegate{
+    
 }
 
